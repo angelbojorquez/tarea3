@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+#cabecera{
+    width: 100%;
+    height: 300px;
+    margin: 0px auto;
+    background-image: url(imagenes/fondoEncabezado2.jpg);
+}
+
+#cabecera #Logo{
+    width: 500;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+#cabecera #Logo img{
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    border-radius: 999px;
+}
+
+#cabecera h1{
+    color: wheat;
+    font-family: Helvetica, Arial;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#menu{
+    width: 90%;
+    margin-left: 100px;
+    background-color: brown;
+    color: white;
+    height: 50px;
+    font-size: 15px;
+    font-family: helvetica, Arial;
+    box-shadow: 0px 0px 4px burlywood;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#menu ul{
+    list-style: none;
+    text-decoration: none;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#menu ul li{
+    line-height: 50px;
+    float: left;
+    border-right: 1px solid white;
+    transition: 400ms;
+}
+
+#menu ul li a{
+    display: block;
+    padding-left: 35px;
+    padding-right: 45px;
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul li a:first-child{
+    border-left: 1px solid white;
+}
+
+#menu ul li:hover{
+    background-color: burlywood;
+    box-shadow: 0px 0px 10px yellow;
+}
+
+#menu ul li ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+}
+
+#menu ul li:hover ul{
+    display: block;
+} 
+
+#menu ul li:hover ul li{
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 15px;
+    transition: all 300ms;
+}
+
+#menu ul li:hover ul li a{
+    color:white;
+}
+
+.box{
+    position: absolute;
+    top: 34%;
+    left: 87%;
+    transform: translate(-50%,-50%);
+}
+
+input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 25px;
+    color: cadetblue;
+    border: 3px solid #a50559;
+    background: #fff url("search-icon.png") no-repeat 9px center;
+    width: 60px;
+    transition: all .5s;
+}
+
+input.src:hover{
+    width: 180px;
+    background-color: #fff;
+    border-color: #8c10b3;
+    box-shadow: 0 0 5px #6dcff680; 
+}
+
+
+section{
+	float: left;
+	width: 950px;
+    min-height: 650px;
+    margin-left: 110px;
+	margin-top:20px; 
+	margin-bottom: 20px; 
+    background:hite;   
+}
+
+
+.slides {
+
+    overflow: hidden;
+    height: 450px;
+    margin-bottom: 20px;
+	
+  
+
+}
+
+.slides ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+.slides li {
+    width: 100%;
+    list-style: none;
+}
+.slides img{
+    width: 100%;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+
+}
+
+aside{
+    margin-top: 20px;
+    float: left;
+    margin-left: 40px;
+	width: 200px;
+	height: 200px;
+	background-image: url(imagenes/pastel7.jpg);
+}
+
+aside a{
+	text-decoration: none;
+	display: block;
+	margin-left: 20px; 
+	margin-top: 5px;
+	padding: 2px;
+}
+aside img{
+	width: 20px;
+    height: 20px;
+    border-radius: 999px;
+}
+
+aside:nth-of-type(1){
+	height: 140px;
+}
+
+h4{
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+aside .Inicio{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    border-bottom: 1px dashed white;
+}
+
+aside h3{
+    color: black;
+}
+aside div label,
+aside div input[type="text"],
+aside div input[type="email"],
+aside div input[type="pasword"],
+aside div a{
+    display: block;
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+aside div input[type="button"],
+aside div input[type="submit"],
+aside div button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside input label{
+    margin: 0px auto;
+    text-align: center;
+}
+
+#pub h4{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+
+}
+aside div img{
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 170px;
+    height: 150px;
+
+}
+
+#pub{
+    width: 200px;
+    height: 268px;
+}
+
+aside p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 50px;
+    background-color: brown;
+    text-align: center;
+    color:white;
+    line-height: 50px;
+    font-style: italic;
+  
+}
+#publicidad{
+    
+    width: 200px;
+    height: 30px;
+    margin-left: 95px;
+   
+    background-color:white;
+    text-align: center;
+    color:black;
+    line-height: 50px;
+    font-style: italic;
+    
+    border-bottom-style:  solid;
+    padding-bottom: 10px;
+    border-color: brown;
+    display: inline-block;
+
+
+}
+#publicidad1{
+    width: 420px;
+    height: 175px; 
+    background-color: white;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:black;
+    font-style: italic;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+
+}
